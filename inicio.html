@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a visualização para se ajustar à largura do dispositivo -->
-    <link rel="stylesheet" href="inicio.css"> <!-- Inclui o arquivo CSS externo chamado "inicio.css" -->
-    <title>EducaTec</title> <!-- Define o título da página como "EducaTec" -->
-    <meta name="Login"> <!-- Meta tag com nome "Login" (não é muito útil assim, mas não causa problemas) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Combinado</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-        <nav class="navbar">
-            <div class="navbar-left">
-                <div class="logo">
-                    <img src="logo.png" alt="Logo"> <!-- Exibe uma imagem com o src "logo.png" e texto alternativo "Logo" -->
-                </div>
+    <!-- Navbar para mobile -->
+    <div class="navbar-header">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </div>
+
+    <!-- Navbar superior para desktop -->
+    <nav class="navbar-top">
+        <div class="navbar-left">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
             </div>
-            <div class="navbar-center">
-                <!-- Central content can go here --> <!-- Espaço reservado para conteúdo central da barra de navegação -->
-            </div>
-            <div class="navbar-right">
-                <button class="help-button">Central de ajuda</button> <!-- Botão que diz "Central de ajuda" -->
-                <div class="dropdown">
-                    <span>Thais Oliveira - Clinica</span> <!-- Texto indicando o nome do usuário e sua clínica -->
-                    <div class="dropdown-content">
+        </div>
+        <div class="navbar-center">
+            <!-- Espaço para conteúdo central -->
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <span>Thais Oliveira - Clinica</span>
+                <div class="dropdown-content">
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Alterar dados cadastrais</a></li> <!-- Link para alterar dados cadastrais -->
-                        <li><a class="dropdown-item" href="#">Alterar senha</a></li> <!-- Link para alterar a senha -->
-                        <li><a class="dropdown-item" href="#">Sair</a></li> <!-- Link para sair (logout) -->
+                        <li><a class="dropdown-item" href="#">Alterar dados cadastrais</a></li>
+                        <li><a class="dropdown-item" href="#">Alterar senha</a></li>
+                        <li><a class="dropdown-item" href="#">Sair</a></li>
                     </ul>
-                    </div>
                 </div>
             </div>
-        </nav>
-    
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Inclui a biblioteca jQuery a partir de uma CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script> <!-- Inclui o Popper.js a partir de uma CDN -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script> <!-- Inclui o JavaScript do Bootstrap a partir de uma CDN -->
+        </div>
+    </nav>
+
+    <!-- Barra lateral para desktop -->
+    <div class="navbar-sidebar" id="navbarMenu">
+        <div class="navbar-menu">
+            <a href="#inicio" class="navbar-item"><i class="fas fa-home"></i> Início</a>
+            <a href="#agenda" class="navbar-item"><i class="fas fa-calendar-alt"></i> Agenda</a>
+            <a href="#pacientes" class="navbar-item"><i class="fas fa-user"></i> Pacientes</a>
+            <a href="#prontuarios" class="navbar-item"><i class="fas fa-file-alt"></i> Prontuários</a>
+            <a href="#configuracoes" class="navbar-item"><i class="fas fa-cogs"></i> Configurações</a>
+            <a href="#pesquisas" class="navbar-item"><i class="fas fa-search"></i> Pesquisas</a>
+            <a href="#formularios" class="navbar-item"><i class="fas fa-edit"></i> Formulários</a>
+            <a href="#guias-tiss" class="navbar-item"><i class="fas fa-file-medical"></i> Guias TISS</a>
+            <a href="#relatorios" class="navbar-item"><i class="fas fa-chart-line"></i> Relatórios</a>
+            <a href="#estoque" class="navbar-item"><i class="fas fa-wallet"></i> Finaceiro</a>
+        </div>
+    </div>
+
+    <script src="scriptinico.js"></script>
 </body>
 </html>
