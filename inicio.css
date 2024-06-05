@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Nunito:wght@300&display=swap');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #edf0f3;
 }
 
 .navbar-header {
@@ -41,6 +44,10 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    list-style: none;
+}
+li{
+    list-style: none;   
 }
 
 .navbar-item {
@@ -52,6 +59,7 @@ body {
     border-bottom: 1px solid #455a64;
     margin-bottom: 30px; /* Adiciona espaçamento maior entre os itens */
     justify-content: left;
+    list-style: none;
 }
 
 .navbar-item i {
@@ -114,6 +122,50 @@ body {
 .dropdown:hover .dropdown-item:hover {
     color: #007bff;
 }
+
+.uplayout{
+    padding-top: 6rem;
+    padding-right: 82rem;
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    display: flex;
+    color: #666;
+    margin: 0rem  17rem;
+    font-weight: 300;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 17rem;
+    gap: 2rem; /* Adiciona um espaço entre os cartões */
+}
+
+.cardGreen {
+    padding:55px 176.75px;
+    background-color: #89d99d;
+    margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+}
+
+.cardBlue {
+    padding: 55px 176.75px;
+    background-color: #77b2e8;
+    margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+}
+
+.cardRed {
+    padding:55px 176.75px;
+    background-color: #e76363;
+    margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+}
+
+.cardGray {
+    padding: 55px 176.75px;
+    background-color: #b3b3b3;
+    margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+}
+
+
 
 @media (max-width: 768px) {
     .navbar-sidebar {
