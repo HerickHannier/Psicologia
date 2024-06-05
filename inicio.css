@@ -137,7 +137,7 @@ li{
 .cards {
     display: flex;
     flex-direction: row;
-    margin: 0rem 17rem;
+    margin: 0rem 16rem;
     gap: 2rem; /* Adiciona um espaço entre os cartões */
 }
 
