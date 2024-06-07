@@ -14,7 +14,7 @@
     background-color: #36454f;
     color: #fff;
     position: fixed;
-    width: 100%;
+    width: 97%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -169,9 +169,9 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;    
-    height: 70vh;
-    background-color: #f4f4f9;
-    margin-right: -60rem;
+    background-color: #edf0f3;
+    margin-left: 10.5rem;
+    margin-top: 5rem;
 }
 
 .container {
@@ -271,6 +271,59 @@ canvas {
     
     .navbar-top {
         display: none; /* Esconde a navbar superior no mobile */
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 2rem; /* Adiciona um espaço entre os cartões */
+    }
+
+    .cardGreen {
+        padding:55px 173px;
+        background-color: #89d99d;
+        margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+    }
+    
+    .cardBlue {
+        padding: 55px 173px;
+        background-color: #77b2e8;
+        margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+    }
+    
+    .cardRed {
+        padding:55px 173px;
+        background-color: #e76363;
+        margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+    }
+    
+    .cardGray {
+        padding: 55px 173px;
+        background-color: #b3b3b3;
+        margin: 0.5rem; /* Adiciona espaço ao redor do cartão */
+    }
+    .uplayout{
+        padding-top: 6rem;
+        padding-right: 0rem;
+        font-size: 32px;
+        letter-spacing: -1px;
+        line-height: 26px;
+        display: flex;
+        color: #666;
+        text-align: center;
+        margin: 0rem  0rem;
+        font-weight: 300;
+        justify-content: center;
+        align-items: center;
+    }
+    .grafico {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        background-color: #edf0f3;
+        margin-left: 0rem;
+        margin-top: 5rem;
     }
 }
 
